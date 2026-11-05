@@ -1,0 +1,19 @@
+original_row_index,order_id,order_date,customer_id,product_id,quantity,unit_price,currency,raw_status,rejection_reasons,potential_revenue_inr
+2,O0051,2026-08-19,,P007,3,1600.0,INR,completed,Missing customer_id,4800.0
+4,O0089,2026-08-07,C005,P006,1,4400.0,INR,completed,Conflicting order_id with inconsistent records,4400.0
+5,O0056,2026-08-01,C019,P005,3,900.0,INR,COMPLETE,Unrecognized status: 'COMPLETE' (normalized: 'complete'),2700.0
+11,O0054,2026-08-17,C044,P011,2,0.0,INR,completed,Non-positive unit_price: 0.0,0.0
+54,O0052,2026-08-28,,P012,1,15000.0,INR,cancelled,Missing customer_id,15000.0
+67,O0037,not-a-date,C068,P007,1,1600.0,INR,completed,Invalid/unparseable order_date: 'not-a-date',1600.0
+77,O0059,2026-08-02,C033,P005,0,900.0,INR,completed,Non-positive quantity: 0,0.0
+79,O0042,2026-08-06,C999,P003,1,6500.0,INR,completed,Invalid customer_id foreign key: 'C999',6500.0
+80,O0030,2026-08-19,C044,P011,2,8200.0,INR,completed,Exact duplicate row,16400.0
+91,O0043,2026-08-06,C998,P004,1,13000.0,INR,completed,Invalid customer_id foreign key: 'C998',13000.0
+95,O0058,2026-08-22,C076,P003,1,6500.0,EUR,completed,Unsupported currency: 'EUR',0.0
+121,O0045,2026-08-23,C002,P998,1,13000.0,INR,completed,Invalid product_id foreign key: 'P998',13000.0
+123,O0053,2026-08-06,C038,P003,-1,6500.0,INR,completed,Non-positive quantity: -1,0.0
+137,O0008,2026-08-25,C024,P005,1,900.0,INR,cancelled,Exact duplicate row,900.0
+172,O0081,2026-08-12,C066,P009,2,4500.0,INR,completed,Exact duplicate row,9000.0
+185,O0036,2026-09-31,C063,P009,2,4500.0,INR,completed,Invalid/unparseable order_date: '2026-09-31',9000.0
+210,O0044,2026-08-21,C065,P999,1,2200.0,INR,completed,Invalid product_id foreign key: 'P999',2200.0
+214,O0089,2026-08-07,C005,P006,1,2200.0,INR,completed,Conflicting order_id with inconsistent records,2200.0

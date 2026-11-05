@@ -1,0 +1,10 @@
+issue_category,occurrences,affected_order_ids,potential_financial_impact_inr,recommended_action
+Foreign Key Violation (Customer),4,"O0042, O0043, O0051, O0052",39300.0,Quarantine; verify customer master sync or backfill missing customer IDs.
+Duplicate Record,3,"O0008, O0030, O0081",26300.0,Deduplicate identical rows safely using order_id and record hash.
+Conflicting Order ID,2,O0089,6600.0,Quarantine for engineering audit; verify transaction logs to clarify discrepancy.
+Foreign Key Violation (Product),2,"O0044, O0045",15200.0,Quarantine; verify product catalog lookup or catalog sync latency.
+Invalid Date,2,"O0036, O0037",10600.0,Reject invalid dates; inspect ingestion source format and timestamp serialization.
+Non-positive Quantity,2,"O0053, O0059",0.0,Reject zero or negative units; investigate return/reversal logging protocol.
+Non-positive Price,1,O0054,0.0,Reject zero price; investigate promotional discount override or testing artifact.
+Unrecognized Status,1,O0056,2700.0,Enforce strict enum validation on order ingestion; audit case and spelling conventions.
+Unsupported Currency,1,O0058,0.0,Quarantine unapproved currency; configure exchange rate table if currency is approved.

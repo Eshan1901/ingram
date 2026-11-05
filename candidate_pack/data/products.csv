@@ -1,0 +1,13 @@
+product_id,product_name,category
+P001,Laptop 14,Computers
+P002,USB-C Dock,Accessories
+P003,SSD 1TB,Storage
+P004,24in Monitor,Displays
+P005,Wireless Mouse,Accessories
+P006,Headset,Audio
+P007,Keyboard,Accessories
+P008,Webcam,Audio
+P009,Router,Networking
+P010,Laptop 16,Computers
+P011,HDD 4TB,Storage
+P012,Printer,Printers
